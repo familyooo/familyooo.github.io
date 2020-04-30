@@ -20,10 +20,32 @@ $(function(){
 </script>
 <style>
 
+.blocker{
+        height:600px;
+        width:100%;
+        background-color:#d6f5d6;
+        position:fixed;
+        top:0;left:0;
+}
+.textOne{
+        width:80%;
+        font-size:100px;
+        text-align:center;
+        color:#194d33;
+        font-family: 'ZCOOL XiaoWei', serif;cursor: url(cursor.cur), auto;
+        line-height:100px;
+        position:absolute;
+        top:15%;left:10%;
+}
+
+
+@media only screen and (min-width: 768px) {
 @keyframes rotate{
                  0%{transform:rotate(0deg);}
                 100%{transform:rotate(360deg);}
 }
+
+.blocker{display:none;}
 
 .title{
       height:50px;
@@ -213,9 +235,13 @@ $(function(){
              position:absolute;
              top:27px;left:50%;
 }
+}
 </style>
 </head>
 <body>
+<div class="blocker">
+   <div class="textOne">触屏版开发中</div>
+</div>
 <div class="yes">
 <div id="header">
    <div class="title"></div>
